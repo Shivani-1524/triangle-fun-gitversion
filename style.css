@@ -96,3 +96,18 @@ nav {
   color: #934aee;
   font-weight: bold;
 }
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+}
+
+i {
+  margin: 7px;
+  font-size: 20px;
+  color: #934aee;
+}
