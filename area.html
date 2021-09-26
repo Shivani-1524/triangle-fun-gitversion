@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Area</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="isTriangle.html" class="nav-link">Is Triangle?</a>
+        <a href="quiz.html" class="nav-link">Triangle Quiz</a>
+        <a href="hypotenuse.html" class="nav-link">Calculate hypotenuse</a>
+        <a href="area.html" class="nav-link current">Area of Triangle</a>
+    </nav>
+    <div class="container">
+        <h1>Area of Triangle</h1>
+        <p class="formula">Formula: 1/2(Base x Height)</p>
+        <div class="input-group">
+            <label>Base : </label>
+            <input type="number" class="user-input">
+        </div>
+        <div class="input-group">
+            <label>Height : </label>
+            <input type="number" class="user-input">
+        </div>
+        <button class="submit-btn" id="calc-area-btn">Calculate Area</button>
+        <div class="output" id="output"></div>
+
+    </div>
+    <script src="area.js"></script>
+</body>
+
+</html>
