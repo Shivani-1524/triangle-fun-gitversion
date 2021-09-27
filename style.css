@@ -24,7 +24,8 @@ nav {
   text-decoration: none;
   color: #fcf5c7;
   font-weight: bolder;
-  padding: 18px;
+  padding-top: 20px;
+  padding-left: 15px;
   display: inline-block;
 }
 
@@ -57,7 +58,7 @@ nav {
 .input-group input {
   border: 2px solid #934aee;
   border-radius: 3px;
-  width: 170px;
+  width: 150px;
   height: 20px;
 }
 
@@ -110,4 +111,10 @@ i {
   margin: 7px;
   font-size: 20px;
   color: #934aee;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-link {
+    padding-left: 7px;
+  }
 }

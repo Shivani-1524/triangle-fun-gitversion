@@ -16,9 +16,9 @@
 <body>
     <nav>
         <a href="index.html" class="nav-link">Is Triangle?</a>
-        <a href="quiz.html" class="nav-link current">Triangle Quiz</a>
-        <a href="hypotenuse.html" class="nav-link">Calculate hypotenuse</a>
-        <a href="area.html" class="nav-link">Area of Triangle</a>
+        <a href="quiz.html" class="nav-link current">Quiz</a>
+        <a href="hypotenuse.html" class="nav-link">Hypotenuse</a>
+        <a href="area.html" class="nav-link">Area</a>
     </nav>
     <h1>Triangle Quiz</h1>
     <div class="container">
@@ -35,6 +35,22 @@
                 <label><input type="radio" name="q2" value="acute"> acute</label>
                 <label><input type="radio" name="q2" value="obtuse"> obtuse</label>
                 <label><input type="radio" name="q2" value="right angled"> right angled</label>
+            </div>
+            <div class="question-container">
+                <p>Which of the following can form a right angled triangle?</p>
+                <label><input type="radio" name="q3" value="14, 15, 26">14, 15, 26</label>
+                <label><input type="radio" name="q3" value="12, 16, 20"> 12, 16, 20</label>
+            </div>
+            <div class="question-container">
+                <p>Which of the following triangles are always similar?</p>
+                <label><input type="radio" name="q4" value="Equilateral triangle">Equilateral triangle</label>
+                <label><input type="radio" name="q4" value="Isosceles triangle"> Isosceles triangle</label>
+            </div>
+            <div class="question-container">
+                <p>If one angle of a triangle is obtuse, then which one of the following is the possible measure of
+                    remaining angles?</p>
+                <label><input type="radio" name="q5" value="100°">100°</label>
+                <label><input type="radio" name="q5" value="85°">85°</label>
             </div>
         </form>
         <button id="submit-btn" class="submit-btn">Submit Answers</button>

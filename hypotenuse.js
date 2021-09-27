@@ -3,15 +3,23 @@ const hypotenuseBtn = document.querySelector("#hypotenuse-btn");
 const outputText = document.querySelector("#output");
 
 function calculateHypotenuse() {
-    for (let i of sides) {
-        if (isNaN(i.value)) {
-            outputText.innerText = "Please Enter numbers for dimensions";
-            return;
+    if (sides[0].value && sides[1].value) {
+        if (sides[0].value > 0 && sides[1].value > 0) {
+            for (let i of sides) {
+                if (isNaN(i.value)) {
+                    outputText.innerText = "Please Enter numbers for dimensions";
+                    return;
+                }
+            }
+            const sumOfSq = calculateSumOfSquares(Number(sides[0].value), Number(sides[1].value));
+            const lengthOfHypotenuse = Math.sqrt(sumOfSq);
+            outputText.innerText = "The Length of Hypotenuse is " + lengthOfHypotenuse;
+        } else {
+            outputText.innerText = "Please enter valid dimensions";
         }
+    } else {
+        outputText.innerText = "Please enter the dimensions";
     }
-    const sumOfSq = calculateSumOfSquares(Number(sides[0].value), Number(sides[1].value));
-    const lengthOfHypotenuse = Math.sqrt(sumOfSq);
-    outputText.innerText = "The Length of Hypotenuse is " + lengthOfHypotenuse;
 }
 
 function calculateSumOfSquares(a, b) {
