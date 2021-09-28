@@ -1,5 +1,5 @@
-# triangle-fun-gitversion
- All things possible with triangles.
+# All things possible with triangles.
+This project was made using Vanilla JavaScript, HTML and CSS.
  In this app you can:
  1. Calculate the area of a triangle
  2. Test yourself on your triangle knowledge
