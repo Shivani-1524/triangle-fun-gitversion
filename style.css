@@ -99,9 +99,7 @@ nav {
 }
 
 footer {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
+  margin-top: 20px;
   width: 100vw;
   height: fit-content;
   text-align: center;
