@@ -2,7 +2,7 @@ const sides = document.querySelectorAll(".side-input");
 const hypotenuseBtn = document.querySelector("#hypotenuse-btn");
 const outputText = document.querySelector("#output");
 
-function calculateHypotenuse() {
+const calculateHypotenuse = () => {
     if (sides[0].value && sides[1].value) {
         if (sides[0].value > 0 && sides[1].value > 0) {
             for (let i of sides) {
@@ -22,7 +22,7 @@ function calculateHypotenuse() {
     }
 }
 
-function calculateSumOfSquares(a, b) {
+const calculateSumOfSquares = (a, b) => {
     return Math.pow(a, 2) + Math.pow(b, 2);
 }
 

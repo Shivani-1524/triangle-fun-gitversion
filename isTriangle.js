@@ -2,7 +2,7 @@ const inputs = document.querySelectorAll(".angle-input");
 const isTriangleBtn = document.querySelector("#check-triangle-btn");
 const outputText = document.querySelector("#output-text");
 
-function triangleCheck() {
+const triangleCheck = () => {
     if (inputs[0].value && inputs[1].value && inputs[2].value) {
         if (inputs[0].value > 0 && inputs[1].value > 0 && inputs[2].value > 0) {
             for (let i of inputs) {
@@ -28,7 +28,7 @@ function triangleCheck() {
 
 }
 
-function sumOfAngles(angleArray) {
+const sumOfAngles = (angleArray) => {
     let sum = 0;
     for (let input of angleArray) {
         sum = sum + Number(input.value);
